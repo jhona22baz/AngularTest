@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <link rel ="stylesheet" href="css\bootstrap.css">
+        <script src="js\lib\angular.min.js"></script>      
+        
+    </head>
+    <body ng-app>
+        <div class= "container">
+            <h1>Angular </h1>
+            <hr>
+            <p>
+                Nombre: 
+                <br>
+                <input type="text" ng-model="nombre" class="form-control" placeholder="ingresa tu nombre" autofocus>                
+            </p>
+            <p>
+                Ciudad:
+                <br>
+                <input type="text" ng-model="ciudad" class="form-control" placeholder="donde vives">
+            </p>
+            <p>
+                Dinero:
+                <br>
+                <input type="text" ng-model="money" class="form-control" placeholder="cuanto ganas" >
+            </p>
+            <hr>
+            <p>
+                Nombre:{{nombre|uppercase}} <br>
+                Ciudad:{{ciudad|lowercase}} <br>
+                Dineros:{{money|currency}} <br>
+            </p>
+        </div>
+    </body>
+</html>
