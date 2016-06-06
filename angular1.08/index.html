@@ -24,7 +24,12 @@
             <h1>Detectar IPs</h1>
             <h4>Manejo de recursos online</h4>
             <hr>
-            
+            {{ geo|json }}
+
+            <br>
+            <br>
+
+            <p>Ip: {{ geo.geoplugin_request }}</p>
         
 
 
